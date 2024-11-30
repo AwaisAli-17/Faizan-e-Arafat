@@ -6,6 +6,7 @@
     <title>Faizan-e-Arafat</title>
     <link rel="icon" type="image/x-icon" href="assets/mosque.png" />
     <link rel="stylesheet" href="styles.css" />
+    
   </head>
   <body>
     <div class="header-image">
@@ -15,7 +16,7 @@
           <nav>
             <ul>
               <li><a href="#">Home</a></li>
-              <li><a href=".prayer-desc-table">Prayer Times</a></li>
+              <li><a href="#prayer-desc-table">Prayer Times</a></li>
               <li><a href=".about-us">About Us</a></li>
               <li><a href=".contact-main">Contact</a></li>
             </ul>
@@ -36,9 +37,9 @@
       </div>
     </div>
 
-    <table class="prayer-desc-table">
+    <table class="prayer-desc-table" id="prayer-desc-table">
       <tr>
-        <td>Prayer Times</td>
+        <td id="text-prayer-times">Prayer Times</td>
         <td>
           Salat is the time when meeting with Allah and the ascension (Mi'raj)
           takes place.
@@ -105,10 +106,10 @@
       </div>
     </div>
 
-    <div class="about-us">
+    <div class="about-us" id="about-us">
       <table class="about-us-table">
         <tr>
-          <td>Faizan-e-Arafat</td>
+          <td id="text-faizanearafat">Faizan-e-Arafat</td>
           <td>
             Faizan-e-Arafat is a mosque in Preston, governed by Dawat-e-Islami.
           </td>
@@ -140,8 +141,8 @@
     </div>
     
 
-    <div class="contact-main">
-      <div class="contact">Contact Us</div>
+    <div class="contact-main" id="contact-main">
+      <div class="contact"><p id="text-contact-us">Contact Us</p></div>
       <div class="contact-details">
         <p>Address:</p>
         <address>
@@ -162,8 +163,7 @@
             placeholder="Enter your email"
           />
 
-          <label for="message"
-            >Message Here: </label>
+          <label for="message">Message Here: </label>
 
             <textarea
               id="message"
@@ -171,9 +171,10 @@
               name="message"
               rows="3"
               cols="30"
-              placeholder="Please add your message..."
+              placeholder="Please add your message..." 
             >
             </textarea>
+           
           </label>
           <input id="submit" type="submit" value="Submit" />
         </form>
