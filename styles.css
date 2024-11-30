@@ -12,6 +12,10 @@
     .grid-item-two {
         visibility: hidden;
     }
+
+    .about-us-main{
+        display: block;
+    }
 }
 
 * {
@@ -26,10 +30,11 @@
     background-image: url("assets/4.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    margin-bottom: 10vh;
 }
 
 .bar-opacity {
-    height: 60px;
+    height: 12vh;
     background-color: rgb(207, 222, 235);
     opacity: 0.4;
     z-index: 1;
@@ -37,8 +42,8 @@
 
 .nav-bar {
     top: 0;
+    height: 12vh;
     display: flex;
-    height: 60px;
     justify-content: space-around;
     align-items: center;
     z-index: 2;
@@ -85,16 +90,6 @@ button {
     margin-left: 10px;
 }
 
-.prayer-desc-table {
-    width: 85%;
-    padding: 50px 0px;
-    margin: 0 auto;
-}
-
-.prayer-desc-table td {
-    width: 50%;
-}
-
 #text-prayer-times{
     font-size: 42px;
     color: #5886a1 ;
@@ -138,7 +133,7 @@ button {
 .grid-container {
     width: 85%;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 10vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     ;
@@ -198,10 +193,37 @@ label{
     margin: 0 auto;
     width: 85%;
     align-items: flex-start;
-    margin-bottom: 25px;
+    margin-bottom: 10vh;
 }
 
 .contact, .contact-details {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about-us {
+    margin: 0 auto;
+    width: 85%;
+    align-items: flex-start;
+    margin-bottom: 10vh;
+}
+
+.faizanearafat, .about-us-table {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.prayer-desc {
+    margin: 0 auto;
+    width: 85%;
+    align-items: flex-start;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+}
+
+.prayer-times, .prayer-table {
     width: 49%;
     display: inline-block;
     vertical-align: top;
@@ -228,15 +250,6 @@ input[type=text],input[type=email], textarea{
     cursor: pointer;
   }
 
-.about-us-table {
-    width: 85%;
-    padding: 50px 0px;
-    margin: 0 auto;
-}
-
-.about-us-table td {
-    width: 50%;
-}
 
 .main-about-us{
     width: 100%;
@@ -245,23 +258,23 @@ input[type=text],input[type=email], textarea{
     align-content: center;
     align-items: center;
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 10vh;
 }
 
 .about-us-div-one{
-    width: 30%;
-    height: 500px;
+    width: 30vw;
+    height: 70vh;
     margin: 25px;
 }
 
 .about-us-div-two{
-    width: 30%;
-    height: 500px;
+    width: 30vw;
+    height: 70vh;
     margin: 25px;
 }
 
 .about-list{
-    width: 25%;
+    width: 25vw;
     display: inline-block;
     margin: auto auto;
 }
