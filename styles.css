@@ -1,157 +1,128 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@media screen and (max-width: 800px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr !important;
-    }
-
-    .grid-item-blank,
-    .grid-item-seven,
-    .grid-item-two {
-        visibility: hidden;
-    }
-
-    .about-us-main{
-        display: block;
-    }
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding: 50px;
+  font-family: Poppins;
 }
 
 .header-image {
-    height: 100vh;
-    background-image: url("assets/4.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin-bottom: 10vh;
-}
-
-.bar-opacity {
-    height: 12vh;
-    background-color: rgb(207, 222, 235);
-    opacity: 0.4;
-    z-index: 1;
+  height: 100vh;
+  background-image: url("assets/4.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 10vh;
 }
 
 .nav-bar {
-    top: 0;
-    height: 12vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 2;
+  top: 0;
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(207, 222, 235, 0.4);
 }
 
 nav ul li {
-    display: inline;
+  display: inline;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 14px 20px;
+  text-decoration: none;
+  color: white;
+  padding: 14px 20px;
 }
 
 nav ul li a:hover {
-    color: #132531;
-    cursor: pointer;
+  color: #132531;
+  cursor: pointer;
 }
 
 button {
-    background-color: #17262f;
-    color: white;
-    padding: 10px 20px;
-    border: 0px;
-    border-radius: 10px;
+  background-color: #17262f;
+  color: white;
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 10px;
 }
 
 .header-location {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 20px 50px;
-    background-color: #17262fa2;
-    display: flex;
-    padding: 10px 20px;
-    border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px 50px;
+  background-color: #17262fa2;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
 .header-location a {
-    color: white;
-    font-size: 22px;
-    position: relative;
-    margin-left: 10px;
+  color: white;
+  font-size: 22px;
+  position: relative;
+  margin-left: 10px;
 }
 
-#text-prayer-times{
-    font-size: 42px;
-    color: #5886a1 ;
-    font-family: Poppins;
+#text-prayer-times {
+  font-size: 42px;
+  color: #5886a1;
+  font-family: Poppins;
 }
 
-#text-prayer-times::first-letter{
-    font-size: 64px;
-    color: #5886a1  ;
-    font-family: Poppins;
-
+#text-prayer-times::first-letter {
+  font-size: 64px;
+  color: #5886a1;
+  font-family: Poppins;
 }
 
-#text-faizanearafat{
-    font-size: 42px;
-    color: #5886a1 ;
-    font-family: Poppins;
+#text-faizanearafat {
+  font-size: 42px;
+  color: #5886a1;
+  font-family: Poppins;
 }
 
-#text-faizanearafat::first-letter{
-    font-size: 64px;
-    color: #5886a1  ;
-    font-family: Poppins;
-
+#text-faizanearafat::first-letter {
+  font-size: 64px;
+  color: #5886a1;
+  font-family: Poppins;
 }
 
-#text-contact-us{
-    font-size: 42px;
-    color: #5886a1 ;
-    font-family: Poppins;
+#text-contact-us {
+  font-size: 42px;
+  color: #5886a1;
+  font-family: Poppins;
 }
 
-#text-contact-us::first-letter{
-    font-size: 64px;
-    color: #5886a1  ;
-    font-family: Poppins;
-
+#text-contact-us::first-letter {
+  font-size: 64px;
+  color: #5886a1;
+  font-family: Poppins;
 }
-
 
 .grid-container {
-    width: 85%;
-    margin: 0 auto;
-    margin-bottom: 10vh;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    ;
-    background-image: url(assets/5.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border-radius: 10px;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-image: url(assets/5.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 .grid-item {
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
 }
 
 hr {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .grid-item-six,
@@ -162,122 +133,166 @@ hr {
 .grid-item-forteen,
 .grid-item-fifteen,
 .grid-item-sixteen {
-    background-color: #17262fb7;
-    margin: 15px 25px;
-    padding: 5px 5px;
+  background-color: #17262fb7;
+  margin: 15px 25px;
+  padding: 5px 5px;
 }
 
 .grid-item-two {
-    grid-column: 2/span 3;
-    text-align: center;
-    font-size: 42px;
-    padding: 20px 5px;
-    color: #17262f;
+  grid-column: 2 / span 3;
+  text-align: center;
+  font-size: 42px;
+  padding: 20px 5px;
+  color: #17262f;
 }
 
 .grid-item-seven {
-    grid-column: 2/span 3;
-    text-align: center;
-    font-size: 42px;
-    margin-left: 50dp;
-    padding: 20px 5px;
-    color: #17262f;
+  grid-column: 2 / span 3;
+  text-align: center;
+  font-size: 42px;
+  margin-left: 50dp;
+  padding: 20px 5px;
+  color: #17262f;
 }
 
-label{
-    display:block;
-    margin-top: 10px;
-    }
+label {
+  display: block;
+  margin-top: 10px;
+}
 
 .contact-main {
-    margin: 0 auto;
-    width: 85%;
-    align-items: flex-start;
-    margin-bottom: 10vh;
+  margin: 0 auto;
+  width: 85%;
+  align-items: flex-start;
+  margin-bottom: 10vh;
 }
 
-.contact, .contact-details {
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
+.contact,
+.contact-details {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .about-us {
-    margin: 0 auto;
-    width: 85%;
-    align-items: flex-start;
-    margin-bottom: 10vh;
+  margin: 0 auto;
+  width: 85%;
+  align-items: flex-start;
+  margin-bottom: 10vh;
 }
 
-.faizanearafat, .about-us-table {
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
+.faizanearafat,
+.about-us-table {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .prayer-desc {
-    margin: 0 auto;
-    width: 85%;
-    align-items: flex-start;
-    margin-bottom: 10vh;
-    margin-top: 5vh;
+  margin: 0 auto;
+  width: 85%;
+  align-items: flex-start;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
 }
 
-.prayer-times, .prayer-table {
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
+.prayer-times,
+.prayer-table {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
 }
 
-input[type=text],input[type=email], textarea{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #17262f;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-about-us {
+  width: 100%;
+  background-image: url(assets/particles.jpg);
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 10vh;
+}
+
+.about-us-div-one {
+  width: 30vw;
+  height: 70vh;
+  margin: 25px;
+}
+
+.about-us-div-two {
+  width: 30vw;
+  height: 70vh;
+  margin: 25px;
+}
+
+.about-list {
+  width: 25vw;
+  display: inline-block;
+  margin: auto auto;
+}
+li {
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
-  input[type=submit] {
-    width: 100%;
-    background-color: #17262f;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  .grid-item-blank,
+  .grid-item-seven,
+  .grid-item-two {
+    grid-column: auto;
   }
 
+  .about-us-main {
+    display: block;
+  }
+}
 
-.main-about-us{
+@media screen and (max-width: 500px) {
+  .prayer-times,
+  .prayer-table {
+    display: block;
     width: 100%;
-    background-image: url(assets/particles.jpg);
-    box-sizing: border-box;
-    align-content: center;
-    align-items: center;
-    display: flex;
-    margin-bottom: 10vh;
-}
+    text-align: justify;
+  }
 
-.about-us-div-one{
-    width: 30vw;
-    height: 70vh;
-    margin: 25px;
-}
+  .faizanearafat,
+  .about-us-table {
+    display: block;
+    width: 100%;
+    text-align: justify;
+  }
 
-.about-us-div-two{
-    width: 30vw;
-    height: 70vh;
-    margin: 25px;
-}
-
-.about-list{
-    width: 25vw;
-    display: inline-block;
-    margin: auto auto;
-}
-li{
-    padding: 20px 0;
+  .contact,
+  .contact-details {
+    display: block;
+    width: 100%;
+    text-align: justify;
+  }
 }
