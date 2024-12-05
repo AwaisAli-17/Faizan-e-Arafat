@@ -6,6 +6,7 @@
   scroll-behavior: smooth;
   scroll-padding: 50px;
   font-family: Poppins;
+  flex-wrap: wrap;
 }
 
 .header-image {
@@ -233,24 +234,24 @@ input[type="submit"] {
   align-content: center;
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 10vh;
 }
 
 .about-us-div-one {
-  width: 30vw;
+  min-width: 30vw;
   height: 70vh;
   margin: 25px;
 }
 
 .about-us-div-two {
-  width: 30vw;
+  min-width: 30vw;
   height: 70vh;
   margin: 25px;
 }
 
 .about-list {
-  width: 25vw;
-  display: inline-block;
+  min-width: 25vw;
   margin: auto auto;
 }
 li {
@@ -267,10 +268,6 @@ li {
   .grid-item-seven,
   .grid-item-two {
     grid-column: auto;
-  }
-
-  .about-us-main {
-    display: block;
   }
 }
 
