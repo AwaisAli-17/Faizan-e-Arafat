@@ -62,43 +62,43 @@ button {
 
 .header-location a {
   color: white;
-  font-size: 22px;
+  font-size: 1.37em;
   position: relative;
   margin-left: 10px;
 }
 
 #text-prayer-times {
-  font-size: 42px;
+  font-size: 2.6em;
   color: #5886a1;
   font-family: Poppins;
 }
 
 #text-prayer-times::first-letter {
-  font-size: 64px;
+  font-size: 4em;
   color: #5886a1;
   font-family: Poppins;
 }
 
 #text-faizanearafat {
-  font-size: 42px;
+  font-size: 2.6em;
   color: #5886a1;
   font-family: Poppins;
 }
 
 #text-faizanearafat::first-letter {
-  font-size: 64px;
+  font-size: 4em;
   color: #5886a1;
   font-family: Poppins;
 }
 
 #text-contact-us {
-  font-size: 42px;
+  font-size: 2.6em;
   color: #5886a1;
   font-family: Poppins;
 }
 
 #text-contact-us::first-letter {
-  font-size: 64px;
+  font-size: 4em;
   color: #5886a1;
   font-family: Poppins;
 }
@@ -116,7 +116,7 @@ button {
 }
 
 .grid-item {
-  font-size: 16px;
+  font-size: 1em;
   color: white;
   text-align: center;
   border-radius: 10px;
@@ -142,7 +142,7 @@ hr {
 .grid-item-two {
   grid-column: 2 / span 3;
   text-align: center;
-  font-size: 42px;
+  font-size: 2.6em;
   padding: 20px 5px;
   color: #17262f;
 }
@@ -150,7 +150,7 @@ hr {
 .grid-item-seven {
   grid-column: 2 / span 3;
   text-align: center;
-  font-size: 42px;
+  font-size: 2.6em;
   margin-left: 50dp;
   padding: 20px 5px;
   color: #17262f;
@@ -186,7 +186,6 @@ label {
 .about-us-table {
   width: 49%;
   display: inline-block;
-  vertical-align: top;
 }
 
 .prayer-desc {
@@ -201,7 +200,6 @@ label {
 .prayer-table {
   width: 49%;
   display: inline-block;
-  vertical-align: top;
 }
 
 input[type="text"],
@@ -231,7 +229,7 @@ input[type="submit"] {
   width: 100%;
   background-image: url(assets/particles.jpg);
   box-sizing: border-box;
-  align-content: center;
+  justify-content: center;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -239,20 +237,22 @@ input[type="submit"] {
 }
 
 .about-us-div-one {
-  min-width: 30vw;
+  min-width: 25vw;
   height: 70vh;
-  margin: 25px;
+  margin: 2vw;
 }
 
 .about-us-div-two {
-  min-width: 30vw;
+  min-width: 25vw;
   height: 70vh;
-  margin: 25px;
+  margin: 2vw;
 }
 
 .about-list {
-  min-width: 25vw;
-  margin: auto auto;
+  min-width: 20vw;
+}
+ul {
+  min-width: 20vw;
 }
 li {
   padding: 20px 0;
