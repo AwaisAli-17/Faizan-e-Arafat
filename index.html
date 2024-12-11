@@ -6,23 +6,30 @@
     <title>Faizan-e-Arafat</title>
     <link rel="icon" type="image/x-icon" href="assets/mosque.png" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
     <header>
       <div class="header-image">
         <div class="nav-bar">
-          <img src="assets/logo-1.png" width="50px" height="40px" />
+          <img src="assets/logo-3.png" width="60px" height="60px" />
 
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#prayer-desc">Prayer Times</a></li>
-              <li><a href="#about-us-main">About Us</a></li>
-              <li><a href="#contact-main">Contact</a></li>
-            </ul>
-          </nav>
-          <button>Donate</button>
+          <div class="topnav" id="myTopnav">
+            <nav>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+              <a href="#">Home</a>
+              <a href="#prayer-desc">Prayer Times</a>
+              <a href="#about-us-main">About Us</a>
+              <a href="#contact-main">Contact</a>
+              <a href="#donate">Donate</a>
+            </nav>
+          </div>
         </div>
 
         <div class="header-location">
@@ -52,56 +59,56 @@
     </section>
 
     <section>
-      <div class="grid-container">
-        <div class="grid-item-blank"></div>
-        <div class="grid-item grid-item-two">Faizan-e-Arafat Masjid</div>
-        <div class="grid-item-blank"></div>
-        <div class="grid-item grid-item-six">
-          <p>Jummah</p>
-          <hr />
-          <p>01:00 PM</p>
-          <p>Azaan 12:00 PM</p>
-        </div>
-        <div class="grid-item grid-item-seven">01:45:00 AM</div>
-        <div class="grid-item grid-item-ten">
-          <p>Qiyam</p>
-          <hr />
-          <p></p>
-          <p>01:08 AM</p>
-        </div>
-        <div class="grid-item grid-item-eleven">
-          <p>Fajar</p>
-          <hr />
-          <p>07:00 AM</p>
-          <p>Azaan 06:40 AM</p>
-        </div>
+      <div class="timings">
+        <p id="timings-mosque-name">Faizan-e-Arafat Masjid</p>
+        <div class="grid-container">
+          <div class="grid-item grid-item-six">
+            <p>Jummah</p>
+            <hr />
+            <p>01:00 PM</p>
+            <p>Azaan 12:00 PM</p>
+          </div>
+          <div class="grid-item grid-item-seven">01:45:00 AM</div>
+          <div class="grid-item grid-item-ten">
+            <p>Qiyam</p>
+            <hr />
+            <p></p>
+            <p>01:08 AM</p>
+          </div>
+          <div class="grid-item grid-item-eleven">
+            <p>Fajar</p>
+            <hr />
+            <p>07:00 AM</p>
+            <p>Azaan 06:40 AM</p>
+          </div>
 
-        <div class="grid-item grid-item-twelve">
-          <p>Dhuhr</p>
-          <hr />
-          <p>12:30 PM</p>
-          <p>Azaan 12:05 PM</p>
-        </div>
+          <div class="grid-item grid-item-twelve">
+            <p>Dhuhr</p>
+            <hr />
+            <p>12:30 PM</p>
+            <p>Azaan 12:05 PM</p>
+          </div>
 
-        <div class="grid-item grid-item-thirteen">
-          <p>Asr</p>
-          <hr />
-          <p>01:30 PM</p>
-          <p>Azaan 12:50 PM</p>
-        </div>
+          <div class="grid-item grid-item-thirteen">
+            <p>Asr</p>
+            <hr />
+            <p>01:30 PM</p>
+            <p>Azaan 12:50 PM</p>
+          </div>
 
-        <div class="grid-item grid-item-forteen">
-          <p>Maghrib</p>
-          <hr />
-          <p>03:30 PM</p>
-          <p>Azaan 03:10 PM</p>
-        </div>
+          <div class="grid-item grid-item-forteen">
+            <p>Maghrib</p>
+            <hr />
+            <p>03:30 PM</p>
+            <p>Azaan 03:10 PM</p>
+          </div>
 
-        <div class="grid-item grid-item-fifteen">
-          <p>Isha</p>
-          <hr />
-          <p>06:10 PM</p>
-          <p>Azaan 05:40 PM</p>
+          <div class="grid-item grid-item-fifteen">
+            <p>Isha</p>
+            <hr />
+            <p>06:10 PM</p>
+            <p>Azaan 05:40 PM</p>
+          </div>
         </div>
       </div>
     </section>
@@ -169,5 +176,16 @@
         </div>
       </div>
     </section>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </body>
 </html>
