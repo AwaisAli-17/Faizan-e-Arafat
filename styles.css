@@ -278,6 +278,31 @@ li {
   .grid-item-two {
     grid-column: auto;
   }
+
+  @media screen and (max-width: 768px) {
+    .topnav a {
+      display: none;
+      width: 100%;
+    }
+
+    .topnav a.icon {
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 0;
+    }
+
+    .topnav.responsive {
+      position: relative;
+      flex-direction: column;
+    }
+
+    .topnav.responsive a {
+      display: block;
+      background-color: #17262f;
+      color: white;
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
